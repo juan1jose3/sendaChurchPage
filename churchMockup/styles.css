@@ -1,0 +1,340 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --step-0: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+    --step-1: clamp(1.2rem, 1.1144rem + 0.428vw, 1.4996rem);
+    --step-2: clamp(1.44rem, 1.2803rem + 0.7986vw, 1.999rem);
+    --step-3: clamp(1.728rem, 1.4604rem + 1.3381vw, 2.6647rem);
+    --step-4: clamp(2.0736rem, 1.6512rem + 2.112vw, 3.552rem);
+    --step-5: clamp(2.4883rem, 1.8465rem + 3.2093vw, 4.7348rem);
+
+    --soft-font:#F5F4F0;
+
+    --video-color-font:#CAAA98;
+
+    --blue-back: #202940;
+    --beige-back: #9A8678;
+    
+}
+
+@font-face {
+    font-family: "Merriweather-Regular";
+    src: url("/churchMockup/fonts/static/Merriweather_120pt-Regular.ttf");
+}
+
+body{
+    font-family: "Merriweather-Regular",serif;
+    font-size: var(--step-0);
+    background-color: var(--beige-back);
+    color:var(--blue-back);
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #202940;
+}
+
+.logo{
+    width: 200px;
+}
+
+
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+
+.hero-section{
+    margin-bottom: 2.5rem;
+}
+
+.hero-section::before{
+    background: rgba(0, 0, 0, 0.35);
+    inset: 0;
+    z-index: 1;
+}
+
+.hero-photo{
+    position: relative;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.btn-hero{
+    display: inline-block;
+    padding: 14px 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-primary{
+    background-color: var(--beige-back);
+    color: var(--blue-back);
+    border: 2px solid var(--beige-back);
+}
+
+.hero-primary:hover{
+    background-color: #202940; 
+    color: #FFFFFF;            
+    border-color: #202940;
+}
+
+.hero-secondary{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.hero-secondary:hover{
+    background-color: #FFFFFF;
+    color: #202940;
+}
+
+
+.bible-back{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    line-height: 1.5;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    color: var(--soft-font);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    font-size: var(--step-4);
+}
+
+.hero-text > h1{
+    font-size: var(--step-5);
+
+}
+
+.hero-text > p{
+    font-size: var(--step-1);   
+}
+
+
+.carousel-section{
+    text-align: center;
+    width: 65%;
+
+    margin: 0 auto;
+}
+
+.carousel-inner {
+  height: 500px; 
+  border-radius:10px ;
+}
+
+.carousel-item,
+.carousel-item img {
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+.socials-section{
+    margin-top:2rem;
+    font-size: var(--step-3 );
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+ 
+    text-align: center;
+    margin-bottom:2.5rem ;
+
+}
+
+.logo-container{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.logo-social{
+    width: 50px;
+    height: auto;
+    display: inline-block;
+}
+
+.predicas-section{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--video-color-font);
+    background-color: #202940;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.video-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.video{
+    border-radius: 10px;
+    width: 350px;
+    height: 200px;
+}
+
+.predicas-button-container{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.predicas-button{
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    background-color: #CAAA98;
+    color: #202940;
+    border: 2px solid #CAAA98;
+}
+
+
+.predicas-button:hover {
+    background-color: transparent;
+    color: #CAAA98;
+   
+    border-color: #CAAA98;
+}
+
+
+.paralax-content{
+    padding-top: 2.5rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    font-size: var(--step-1);
+}
+
+.paralax-text{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10rem;
+}
+
+
+.paralax-gathering{
+    background:url(images/paralax.jpg);
+    background-attachment: fixed;
+    background-position: center bottom;  
+    background-size: cover;             
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+
+
+.paralax-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 41, 64, 0.65);;
+
+}
+
+.paralax-content{
+    color: #CAAA98;
+
+}
+
+.clock-image{
+    width: 8rem;
+    height: 8rem;
+}
+
+.clock-container{
+    padding-bottom: 1.5rem;
+}
+
+.footer-container{
+    padding-top:2rem ;
+    text-align: center;
+    color: #CAAA98;
+    background-color: rgba(19, 24, 38, 0.95);
+    height: 60vh;
+}
+
+
+.footer-content{
+
+    font-size: var(--step-0);
+    
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4rem;
+}
+
+
+.icons-footer{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
