@@ -1,0 +1,151 @@
+:root{
+    --soft-font:#F5F4F0;
+    --blue-back: #202940;
+    --beige-back:#9A8678;
+    --soft-beige:#CAAA98;
+
+    --main-title:#131826;
+    --sub-title:#202940;
+    --text:#2C313E;
+
+
+
+
+    --step--3: clamp(0.5277rem, 0.5933rem + -0.0728vw, 0.5787rem);
+    --step--2: clamp(0.6944rem, 0.6919rem + 0.0129vw, 0.7035rem);
+    --step--1: clamp(0.8333rem, 0.8035rem + 0.1491vw, 0.9377rem);
+    --step-0: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+    --step-1: clamp(1.2rem, 1.1144rem + 0.428vw, 1.4996rem);
+    --step-2: clamp(1.44rem, 1.2803rem + 0.7986vw, 1.999rem);
+    --step-3: clamp(1.728rem, 1.4604rem + 1.3381vw, 2.6647rem);
+    --step-4: clamp(2.0736rem, 1.6512rem + 2.112vw, 3.552rem);
+    --step-5: clamp(2.4883rem, 1.8465rem + 3.2093vw, 4.7348rem);
+}
+
+
+body{
+    background-color: #CAAA98;
+}
+
+h1{
+    font-size: var(--step-4);
+}
+
+h2{
+    font-size: var(--step-3);
+}
+
+h3{
+    font-size: var(--step-2);
+}
+
+p{
+    font-size: var(--step-0);
+}
+
+.title-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left:0;
+    padding: 0 20px;
+}
+
+.title-text > h1{
+    font-weight:bold ;
+}
+
+.mini-text{
+    font-weight: lighter;
+}
+
+
+.content-section{
+    text-align: center;
+}
+
+.content-section h2{
+    font-weight: 700;
+}
+
+.content-section h3,
+.content-section h4 {
+    color: var(--sub-title);
+}
+
+
+
+.content-section p{
+    color: var(--text);
+}
+
+.history-wrapper{
+    text-align: justify;
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+}
+
+.objectives-section{
+    margin-top:1.5rem ;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.item{
+    max-width: 20%;
+    display: flex;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px rgba(19, 24, 38, 0.06) solid;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    gap: 1rem;
+   
+}
+
+.card p, ol{
+    font-size: var(--step--1);
+}
+
+
+.card-text-wr{
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+
+ol{
+    text-align: left;
+    
+}
+
+
+.pastores-section{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    color: var(--soft-beige);
+    background-color: var(--blue-back);
+}
+
+
+
+

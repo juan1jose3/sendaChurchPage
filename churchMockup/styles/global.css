@@ -44,6 +44,7 @@ body{
 h1{
     font-size: var(--step-4);
 }
+
 .main-container{
     flex: 1;
 }
@@ -57,6 +58,7 @@ h1{
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: #202940;
+    max-width: 100%;
 }
 
 .logo{
@@ -73,6 +75,7 @@ ul{
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
 }
 
@@ -80,5 +83,111 @@ a{
     
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: var(--step-0);
+}
+
+
+
+.title-section{
+    margin-bottom: 2.5rem;
+}
+
+.title-section::before{
+    background: rgba(0, 0, 0, 0.35);
+    inset: 0;
+    z-index: 1;
+}
+
+.title-photo{
+    position: relative;
+    width: 100%;
+}
+
+.title-back{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+
+.title-text{
+    
+    display: flex;
+    
+    align-items: center;
+    justify-content: flex-start;
+    
+    padding-left:3rem;
+    line-height: 1.5;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    color: var(--soft-font);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.paralax-gathering{
+    background:url(../images/paralax.jpg);
+    background-attachment: fixed;
+    background-position: center bottom;  
+    background-size: cover;             
+    background-repeat: no-repeat;
+    min-width: 100%;    
+}
+
+.footer-container{
+    min-width: 100%;
+    height: 100%;
+    padding-top:2rem ;
+    text-align: center;
+    color: #CAAA98;
+    background-color: rgba(19, 24, 38, 0.95);
+    padding-bottom: 3.5rem;
+
+}
+
+
+.footer-content{
+    font-size: var(--step--1);
+    display: flex;
+    min-width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+}
+
+.footer-content p{
+    font-size: var(--step-0);
+}
+
+.icons-footer{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.footer-container h2{
+    font-size: var(--step-2);
+}
+
+
+
+.footer-container hr{
+    border: none; 
+    border-top: 1px solid #CAAA98; 
+    opacity: 0.3; 
+    margin-top: 1rem; 
+    margin-bottom: 1.5rem;
 }
