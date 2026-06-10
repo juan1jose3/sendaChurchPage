@@ -81,7 +81,7 @@ p{
 }
 
 .history-wrapper{
-    text-align: justify;
+    text-align: left;
     max-width: 40%;
     margin: 0 auto;
     padding: 1rem 1rem;
@@ -137,14 +137,40 @@ ol{
 
 .pastores-section{
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 1.5rem;
     padding-bottom: 2.5rem;
     color: var(--soft-beige);
     background-color: var(--blue-back);
 }
+
+
+.pastor-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+.pastor-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    gap: 2.5rem;
+}
+
+.pastor-pic{
+    width: 60%;
+  
+}
+
+.pastor-text-wrapper{
+    text-align: left;
+    max-width: 35%;
+    line-height: 1.6;
+}
+
 
 
 
