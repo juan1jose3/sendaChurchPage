@@ -17,7 +17,6 @@
 
 }
 
-
 body{
     background-color: var(--blue-back);
     padding-bottom: 2.5rem;
@@ -26,79 +25,61 @@ body{
 
 }
 
-h1{
-    font-size: var(--step-3);
+.title-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left:0;
+    padding: 0 20px;
 }
 
-h2{
+h1{
+    font-size: var(--step-4);
+}
+
+.mini-text{
+    font-weight: lighter;
     font-size: var(--step-2);
 }
 
-.predicas-section{
-    color: var(--soft-beige);
-    margin-bottom: 2.5rem;
+.clip-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    gap: 2.5rem;
 }
 
-.predicas-container{
+
+.clip{
+    width:40vw;
+    height: 60vh;
+    border-radius: 10px;
+}
+
+
+
+.predica-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     gap: 1.5rem;
- 
-   
 }
 
-.predica-card{
-    display: flex;
-    gap: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px #CAAA98 solid;
-    
-
-}
-
-.predica{
-    max-width: 40%;
-    
-}
-
-.predica a{
-    color: var(--soft-beige);
-}
-
-.predica a:hover{
+.predica-card:hover{
     text-decoration: underline;
 }
 
-
-
-
-
-.predica-thumbnail{
-    border-radius: 8px;
-    min-width: 10vw;
-    max-height: 23vh ;
+.predica{
+    border-bottom:#CAAA98 1px solid;
+    
 }
 
-
-.predica-title{
-    max-width: 100%;
-    text-align: left;
-    font-size: var(--step-1);
+.predica p,
+.predica h2{
+    color: var(--soft-beige);
 }
 
-.predica-text{
-    max-width: 90%;
-    text-align: left;
-    font-size: var(--step-0);
+.predica-card{
+    padding-bottom: 1.5rem;
 }
-
-
-
-
-
-
-
-
