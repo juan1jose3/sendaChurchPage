@@ -17,69 +17,43 @@
     --step-4: clamp(2.0736rem, 1.6512rem + 2.112vw, 3.552rem);
     --step-5: clamp(2.4883rem, 1.8465rem + 3.2093vw, 4.7348rem);
 
+    --white:#FFFFFF;
+    --golden:#DC901A;
+    --pure-black:#000000;
     --soft-font:#F5F4F0;
-
-    --video-color-font:#CAAA98;
-
-    --blue-back: #202940;
-    --beige-back: #9A8678;
     
 }
 
+
 @font-face {
-    font-family: "Merriweather-Regular";
-    src: url("../fonts/static/Merriweather_120pt-Regular.ttf");
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
+
 
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: "Merriweather-Regular",serif;
+    font-family: "Poppins",serif;
     font-size: var(--step-0);
-    background-color: var(--beige-back);
-    color:var(--blue-back);
+    background: linear-gradient(135deg, #161616 0%, #020202 100%) fixed;
+    color:var(--white);
 }
 
-.main-container{
-    flex: 1;
-}
-
-.nav-container{
-    transform: translateY(1px) ;
-}
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: #202940;
+h1{
+    font-size: var(--step-3);
+    color: var(--golden);
 }
 
 .logo{
-    display: block;
-    width: 200px;
     margin-top: -20px;
 }
-
-
-
-ul{
-    
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1.5rem;
-}
-
-a{  
-    
-    color: white;
-    text-decoration: none;
-    font-size: var(--step-0);
-}
-
 
 .hero-section{
     margin-bottom: 2.5rem;
@@ -117,26 +91,29 @@ a{
 }
 
 .hero-primary{
-    background-color: var(--beige-back);
-    color: var(--blue-back);
-    border: 2px solid var(--beige-back);
+    background-color: var(--golden);
+    color: var(--pure-black);
+    border: 2px solid var(--golden);
 }
 
 .hero-primary:hover{
-    background-color: #202940; 
-    color: #FFFFFF;            
-    border-color: #202940;
+    background-color: #F5A623; 
+    border-color: #F5A623;
+    box-shadow: 0 0 20px rgba(245, 166, 35, 0.1);        
+    transform: translateY(-2px); 
+   
 }
 
 .hero-secondary{
     background-color: transparent;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF;
+    color: var(--white);
+    border: 2px solid var(--white);
 }
 
 .hero-secondary:hover{
-    background-color: #FFFFFF;
-    color: #202940;
+    background-color: var(--white);
+    color: #000000;
+    border: 2px solid var(--white);
 }
 
 
@@ -163,12 +140,14 @@ a{
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-h1{
-    font-size: var(--step-4);
+strong{
+    color: #E67E22;
 }
 
 .hero-text > h1{
-    font-size: var(--step-5);
+    color: var(--soft-font);
+    font-size: var(--step-4);
+    font-weight:600;
 
 }
 
@@ -206,7 +185,6 @@ h1{
  
     text-align: center;
     margin-bottom:2.5rem ;
-
 }
 
 .logo-container{
@@ -223,12 +201,21 @@ h1{
     display: inline-block;
 }
 
+.logo-social:hover{
+    transition: 0.3s ease-in;
+    transform: translateY(-5px);
+}
+
+.logo-social:not(:hover){
+    transition: 0.3 ease-out;
+    transform: translateY(5px);
+}
+
 .predicas-section{
     padding-top: 1rem;
     width: 100%;
     padding-bottom: 3rem;
     color: var(--video-color-font);
-    background-color: #202940;
     margin-top: 1.5rem;
     text-align: center;
 }
@@ -264,17 +251,17 @@ h1{
     cursor: pointer;
     transition: all 0.3s ease;
 
-    background-color: #CAAA98;
-    color: #202940;
-    border: 2px solid #CAAA98;
+    background-color: var(--golden);
+    color: var(--pure-black);
+    border: 2px solid var(--golden);
 }
 
 
 .predicas-button:hover {
     background-color: transparent;
-    color: #CAAA98;
+    color: var(--white);
    
-    border-color: #CAAA98;
+    border-color: var(--golden);
 }
 
 
@@ -282,8 +269,10 @@ h1{
     padding-top: 2.5rem;
     text-align: center;
     padding-bottom: 2.5rem;
-    font-size: var(--step-1);
+    font-size: var(--step-0);
 }
+
+
 
 .paralax-text{
     margin-top: 2.5rem;
@@ -294,11 +283,14 @@ h1{
     gap: 10rem;
 }
 
+.paralax-text  p{
+    color: var(--white);
+}
+
 
 .paralax-gathering{
-    background:url(../images/paralax.jpg);
-    background-attachment: fixed;
-    background-position: center bottom;  
+    background:url(../images/dark-paralax.jpg);
+    background-position: top;  
     background-size: cover;             
     background-repeat: no-repeat;
     width: 100%;
@@ -309,58 +301,17 @@ h1{
 .paralax-overlay{
     width: 100%;
     height: 100%;
-    background-color: rgba(32, 41, 64, 0.65);;
+    background-color: rgba(0, 0, 0, 0.65);
 
 }
 
 .paralax-content{
-    color: #CAAA98;
+    color: var(--golden);
 
 }
 
 .clock-image{
     width: 8rem;
     height: 8rem;
-}
-
-.clock-container{
-    padding-bottom: 1.5rem;
-}
-
-.footer-container{
-    padding-top:2rem ;
-    text-align: center;
-    color: #CAAA98;
-    background-color: rgba(19, 24, 38, 0.95);
-   padding-bottom: 2rem;
-}
-
-
-.footer-content{
-    font-size: var(--step--1);
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 1.5rem;
-}
-
-.footer-content{
-    font-size: var(--step-0);
-}
-
-
-.icons-footer{
-    padding-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.footer-icon{
-    width: 1.5rem;
-    height: 1.5rem;
 }
 
