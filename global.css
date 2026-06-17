@@ -37,7 +37,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: "Poppins",serif;
+    font-family: "Poppins",sans-serif;
     font-size: var(--step-0);
     background: linear-gradient(135deg, #161616 0%, #020202 100%) fixed;
     color:var(--white);
@@ -87,12 +87,14 @@ ul{
     color: var(--white);
     text-decoration: none;
     font-size: var(--step-0);
+    transition: color 0.25s ease;
 }
 
 .special-link:hover{
     color: var(--golden);
     text-decoration: underline;
-    transition: 1s;
+    text-decoration: underline;
+    border-radius: 0.5rem;
 }
 
 

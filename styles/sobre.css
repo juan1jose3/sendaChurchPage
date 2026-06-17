@@ -73,7 +73,7 @@ p{
 }
 
 .history-section h3{
-    color: #DC901A;
+    color: var(--golden);
 }
 
 .history-wrapper{
@@ -94,7 +94,7 @@ p{
 }
 
 .item{
-    max-width: 20%;
+    width: 420px;
     display: flex;
 }
 
@@ -111,6 +111,7 @@ p{
     gap: 1rem;
    
 }
+
 
 .card p, ol{
     font-size: var(--step--1);
