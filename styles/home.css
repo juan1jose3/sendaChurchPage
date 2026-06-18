@@ -168,6 +168,17 @@ strong{
     margin-bottom: 2rem;
 }
 
+.about-us-content{
+    display: flex;
+    justify-content: center;
+}
+
+
+.about-text-wrapper{
+    text-align: left;
+    width: 64%;
+}
+
 
 .events-section{
     text-align: center;
@@ -221,9 +232,11 @@ strong{
 
 .event-pic{
     border-radius: 8px;
-    max-width: 15vw;
+    min-width: 5vw;
     max-height: 30vh ;
 }
+
+
 
 .more-event{
 
@@ -370,16 +383,17 @@ strong{
 
 
 .paralax-text{
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: var(--step--3);
+   
 }
 
 .paralax-text  p{
     color: var(--white);
+    font-size: var(--step-0);
 }
 
 
@@ -392,6 +406,35 @@ strong{
     
 }
 
+.squedules-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.squedule{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--step-0);
+}
+
+.squedule-title{
+    display: flex;
+    align-items: center;
+    min-width: 40%;
+    height: 80px;
+    padding-right:var(--step-0) ;
+    border-right: 2px var(--golden) solid;
+  
+}
+
+.squedule-text{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    min-width: 50%;
+    height: 80px;
+}
 
 .paralax-overlay{
     width: 100%;
