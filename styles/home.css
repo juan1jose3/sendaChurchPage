@@ -175,8 +175,17 @@ strong{
 
 
 .about-text-wrapper{
+    width: 60%;
+}
+.about-text-wrapper p{
     text-align: left;
-    width: 64%;
+    
+}
+
+@media (min-width: 768px) {
+  .about-text-wrapper p {
+    text-align: justify; 
+  }
 }
 
 
@@ -346,7 +355,7 @@ strong{
     text-align: center;
     margin-top: 1.5rem;
 }
-.predicas-button,
+
 .event-button{
     display: inline-block;
     padding: 12px 30px;
@@ -364,13 +373,51 @@ strong{
 }
 
 
-.predicas-button:hover,
 .event-button:hover{
     background-color: transparent;
     color: var(--white);
    
     border-color: var(--golden);
 }
+
+
+.form-escuela{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+.form-container{
+    margin-top: 1.5rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+form label{
+    display: block;
+}
+
+form input{
+    background-color: #1a1a1a;
+    border: 1px solid #2d2d2d;
+    color: #FFFFFF;
+    border-radius: 6px;
+    height: 40px;
+}
+
+form input:focus{
+    border-color: var(--golden);
+    outline: none;
+}
+
 
 
 .paralax-content{
