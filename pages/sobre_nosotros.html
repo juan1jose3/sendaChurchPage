@@ -1,63 +1,59 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sobre Nosotros – Ministerio Internacional Senda de Valientes." />
     <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="stylesheet" href="../global.css" />
     <link rel="stylesheet" href="../styles/sobre.css" />
-    <title>Sobre Nosotros</title>
+    <title>Sobre Nosotros – Senda de Valientes</title>
   </head>
   <body>
     <div class="main-container">
       <header class="title-section">
         <div class="header">
           <div class="logo-container">
-            <img src="../images/sendaLogo.png" class="logo" />
+            <a href="../index.html" aria-label="Ir al inicio">
+              <img src="../images/sendaLogo.png" class="logo" alt="Logo Senda de Valientes" />
+            </a>
           </div>
 
-          <nav class="nav-container">
-            <div>
-              <ul>
-                <li>
-                  <a href="../index.html" class="special-link">Home</a>
-                </li>
+          <!-- Hamburger (mobile) -->
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="primaryNav"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
 
-                <li>
-                  <a href="#" class="special-link"
-                    >Sobre Nosotros</a
-                  >
-                </li>
-
-                <li>
-                  <a href="predicas.html" class="special-link"
-                    >Predicas</a
-                  >
-                </li>
-
-                <li>
-                  <a href="eventos.html" class="special-link">Eventos</a>
-                </li>
-              </ul>
-            </div>
+          <nav class="nav-container" id="primaryNav" aria-label="Navegación principal">
+            <ul>
+              <li><a href="../index.html" class="special-link">Home</a></li>
+              <li><a href="#" class="special-link" aria-current="page">Sobre Nosotros</a></li>
+              <li><a href="predicas.html" class="special-link">Predicas</a></li>
+              <li><a href="eventos.html" class="special-link">Eventos</a></li>
+            </ul>
           </nav>
         </div>
 
         <section class="title-photo">
-          <img src="../images/aboutUs.jpg" alt="" class="title-back" />
-
+          <img src="../images/aboutUs.jpg" alt="Fondo Sobre Nosotros" class="title-back" />
           <div class="title-text">
             <h1>Sobre Nosotros</h1>
             <div>
               <h3 class="mini-text">
-                "Conociendo a Dios, construyendo familia y caminando con
-                propósito."
+                "Conociendo a Dios, construyendo familia y caminando con propósito."
               </h3>
             </div>
           </div>
         </section>
       </header>
-
 
       <main class="content-section">
         <div class="history-section">
@@ -65,114 +61,57 @@
           <div>
             <h3>Un Sueño Nacido en el Corazón de Dios</h3>
             <div class="history-wrapper">
-              <div>
-                <p>
-                  Senda de Valientes nació en mayo de 2010 en Bogotá, cuando el
-                  Pastor Ever Arévalo respondió al llamado de cumplir el
-                  propósito divino en la tierra. Comenzando como parte de una
-                  denominación internacional, el ministerio se consolidó
-                  firmemente y, en el año 2020, adoptó oficialmente su nombre
-                  actual, enfocándose en la transformación personal a través de
-                  los principios de la Palabra de Dios.
-                </p>
-              </div>
+              <p>
+                Senda de Valientes nació a partir del llamado que Dios hizo al Pastor Ever Arévalo en mayo de 2010. Tras un proceso de crecimiento y consolidación ministerial, en el año 2023 se estableció oficialmente como Ministerio Internacional Senda de Valientes, manteniendo su compromiso con la transformación de vidas a través de los principios de la Palabra de Dios.
+              </p>
             </div>
           </div>
           <div>
             <h3>Impactando Generaciones</h3>
             <div class="history-wrapper">
               <p>
-                Hoy, el ministerio expande su impacto nacional e internacional
-                bajo tres pilares fundamentales: Liderazgo, Transformación y
-                Reino. A través de redes de transformación, el restablecimiento
-                del modelo original de familia y la fundación Líderes de
-                Impacto, Senda de Valientes trabaja activamente en formar
-                líderes que dejen un legado duradero en las futuras
-                generaciones.
+                Hoy, el ministerio expande su impacto nacional e internacional bajo tres pilares fundamentales: Liderazgo, Transformación y Reino. A través de redes de transformación, el restablecimiento del modelo original de familia y la fundación Líderes de Impacto, Senda de Valientes trabaja activamente en formar líderes que dejen un legado duradero en las futuras generaciones.
               </p>
             </div>
           </div>
         </div>
 
-        <section class="objectives-section">
+        <section class="objectives-section" aria-label="Misión, visión y valores">
           <div class="item">
-            <div class="card">
-              <h4>Misión</h4>
-
-              <div class="card-text-wr">
-                <p>
-                  Establecer el Reino de Dios por medio de la formación integral
-                  de hombres y mujeres. Guiamos y transformamos vidas a través
-                  de los principios bíblicos, enseñándoles a guardar su
-                  espíritu, alma y cuerpo para el propósito de Dios
-                </p>
-              </div>
+            <div>
+              <img src="../images/mision.png" alt="Misión de Senda de Valientes" class="card-pic" />
             </div>
           </div>
 
           <div class="item">
-            <div class="card">
-              <h4>Visión</h4>
-
-              <div class="card-text-wr">
-                <p>
-                  Al año 2030, establecernos como un ministerio de impacto
-                  internacional enfocado en la expansión del Reino de los cielos
-                  en la tierra, convirtiéndonos en un referente de formación de
-                  ministros que impacten los montes de influencia y propicien la
-                  apertura de nuevas iglesias alineadas con la Voluntad y el
-                  Propósito de Dios.
-                </p>
-              </div>
+            <div>
+              <img src="../images/vision.png" alt="Visión de Senda de Valientes" class="card-pic" />
             </div>
           </div>
 
           <div class="item">
-            <div class="card">
-              <h4>Valores</h4>
-
-              <div class="card-text-wr">
-                <p>
-                  Buscamos reflejar el carácter de Jesús en cada acción,
-                  viviendo de manera coherente, honesta y transparente tanto en
-                  lo público como en lo privado.
-                </p>
-              </div>
-              <h4>Así lo hacemos</h4>
-              <ol>
-                <li>Amor</li>
-                <li>Humildad</li>
-                <li>Excelencia</li>
-                <li>Orden</li>
-                <li>Unidad</li>
-              </ol>
+            <div>
+              <img src="../images/valores.png" alt="Valores de Senda de Valientes" class="card-pic" />
             </div>
           </div>
         </section>
 
-        <section class="pastores-section">
-          <h2>Nuestro Pastor</h2>
+        <section class="pastores-section" aria-labelledby="pastor-heading">
+          <h2 id="pastor-heading">Nuestro Pastor</h2>
           <div class="pastor-container">
-  
             <div class="pastor-item">
               <div>
-                <img src="../images/pastorpic.png" alt="" class="pastor-pic">
+                <img src="../images/pastorpic.png" alt="Pastor Ever Arévalo" class="pastor-pic" />
               </div>
-  
               <div class="pastor-text-wrapper">
-                  <p>
-                    Fundador de Senda de Valientes y el Centro de Liderazgo Integral Cristiano (CLIC), el Pastor Ever Arévalo cuenta con más de 15 años de experiencia sirviendo al ministerio. Es Administrador de Empresas con maestría en Psicología, escritor de más de 15 libros y director de la Fundación Líderes de Impacto. Su llamado está enfocado en la transformación personal, el desarrollo humano y el fortalecimiento familiar, capacitando a líderes que inspiren y dejen un legado duradero en las futuras generaciones.
-                  </p>
-               
+                <p>
+                  Fundador de Senda de Valientes y el Centro de Liderazgo Integral Cristiano (CLIC), el Pastor Ever Arévalo cuenta con más de 15 años de experiencia sirviendo al ministerio. Es Administrador de Empresas con maestría en Psicología, escritor de más de 15 libros y director de la Fundación Líderes de Impacto. Su llamado está enfocado en la transformación personal, el desarrollo humano y el fortalecimiento familiar, capacitando a líderes que inspiren y dejen un legado duradero en las futuras generaciones.
+                </p>
               </div>
             </div>
-  
-  
           </div>
-          </di>
         </section>
       </main>
-
 
       <footer>
         <div class="paralax-gathering">
@@ -185,70 +124,48 @@
                     Bogotá – Polo: Cra 27 # 83-75 <br />
                     Bogotá – Ciudad Bolivar: Calle 68 sur # 45D – 13 <br />
                     Cajicá: Calle 3 # 2-53 Piso 2 <br />
+                    Zipaquirá: Cra. 10A #7-49
                   </p>
                 </div>
               </div>
 
               <div class="footer-item">
                 <h2>Accesos rápidos</h2>
-                <div>
-
-                  <div>
-                    <a href="#" class="special-link">Home</a>
-                  </div>
-
-                  <div>
-                    <a href="#" class="special-link">Sobre Nosotros</a>
-                  </div>
-
-                  <div>
-                    <a href="#" class="special-link">Predicas</a>
-                  </div>
-
-                  <div>
-                    <a href="#" class="special-link">Eventos</a>
-                  </div>
-                </div>
+                <nav aria-label="Accesos rápidos del footer">
+                  <div><a href="../index.html" class="special-link">Home</a></div>
+                  <div><a href="#" class="special-link" aria-current="page">Sobre Nosotros</a></div>
+                  <div><a href="predicas.html" class="special-link">Predicas</a></div>
+                  <div><a href="eventos.html" class="special-link">Eventos</a></div>
+                </nav>
               </div>
 
               <div class="footer-item">
                 <h2>Contacto</h2>
                 <p>Email: sendadevalientes@gmail.com</p>
-                <p>Número:+57 123434325</p>
+                <p>Número: +57 3014242071</p>
               </div>
             </div>
 
             <div class="icons-footer">
               <div>
-                <img
-                  src="../images/svgs/facebook_footer.svg"
-                  alt=""
-                  class="footer-icon"
-                />
+                <a href="https://www.facebook.com/p/Senda-de-Valientes-100089714483635/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <img src="../images/svgs/facebook_footer.svg" alt="Facebook" class="footer-icon" />
+                </a>
               </div>
-
               <div>
-                <img
-                  src="../images/svgs/instagram_footer.svg"
-                  alt=""
-                  class="footer-icon"
-                />
+                <a href="https://www.instagram.com/sendadevalientes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <img src="../images/svgs/instagram_footer.svg" alt="Instagram" class="footer-icon" />
+                </a>
               </div>
-
               <div>
-                <img
-                  src="../images/svgs/tiktok_footer.svg"
-                  alt=""
-                  class="footer-icon"
-                />
+                <a href="https://www.tiktok.com/@sendadevalientessdv" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                  <img src="../images/svgs/tiktok_footer.svg" alt="TikTok" class="footer-icon" />
+                </a>
               </div>
-
               <div>
-                <img
-                  src="../images/svgs/youtube_footer.svg"
-                  alt=""
-                  class="footer-icon"
-                />
+                <a href="https://www.youtube.com/@sendadevalientes" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                  <img src="../images/svgs/youtube_footer.svg" alt="YouTube" class="footer-icon" />
+                </a>
               </div>
             </div>
             <hr />
@@ -259,5 +176,15 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      const navToggle = document.getElementById('navToggle');
+      const primaryNav = document.getElementById('primaryNav');
+      navToggle.addEventListener('click', () => {
+        const isOpen = primaryNav.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', isOpen);
+        navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+      });
+    </script>
   </body>
 </html>

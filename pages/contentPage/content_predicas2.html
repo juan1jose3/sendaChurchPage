@@ -1,104 +1,85 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../global.css" />
+    <meta name="description" content="La Iglesia Trascendente – Predica de Senda de Valientes." />
     <link rel="stylesheet" href="../../styles/normalize.css" />
+    <link rel="stylesheet" href="../../global.css" />
     <link rel="stylesheet" href="../../styles/content-predicas.css" />
-    <title>Content Predicas</title>
+    <title>La Iglesia Trascendente – Senda de Valientes</title>
   </head>
   <body>
     <div class="main-container">
       <header class="title-section">
         <div class="header">
           <div class="logo-container">
-            <img src="../../images/sendaLogo.png" class="logo" />
+            <a href="../../index.html" aria-label="Ir al inicio">
+              <img src="../../images/sendaLogo.png" class="logo" alt="Logo Senda de Valientes" />
+            </a>
           </div>
 
-          <nav class="nav-container">
-            <div>
-              <ul>
-                <li>
-                  <a href="../../index.html" class="special-link">Home</a>
-                </li>
+          <!-- Hamburger (mobile) -->
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="primaryNav"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
 
-                <li>
-                  <a href="../sobre_nosotros.html" class="special-link"
-                    >Sobre Nosotros</a
-                  >
-                </li>
-
-                <li>
-                  <a href="../predicas.html" class="special-link">Predicas</a>
-                </li>
-
-                <li>
-                  <a href="../eventos.html" class="special-link">Eventos</a>
-                </li>
-              </ul>
-            </div>
+          <nav class="nav-container" id="primaryNav" aria-label="Navegación principal">
+            <ul>
+              <li><a href="../../index.html" class="special-link">Home</a></li>
+              <li><a href="../sobre_nosotros.html" class="special-link">Sobre Nosotros</a></li>
+              <li><a href="../predicas.html" class="special-link" aria-current="page">Predicas</a></li>
+              <li><a href="../eventos.html" class="special-link">Eventos</a></li>
+            </ul>
           </nav>
-
-          <section class="title-photo">
-            <img
-              src="../../images/predicas-wallpaper.jpg"
-              alt=""
-              class="title-back"
-            />
-
-            <div class="title-text">
-              <h1>"La Iglesia Trascendente"</h1>
-              <div class="mini-text">
-                <p>alcanzar la grandeza que Dios tiene preparada</p>
-              </div>
-            </div>
-          </section>
         </div>
+
+        <section class="title-photo">
+          <img src="../../images/predicas-wallpaper.jpg" alt="Fondo predicas" class="title-back" />
+          <div class="title-text">
+            <h1>"La Iglesia Trascendente"</h1>
+            <div class="mini-text">
+              <p>Alcanzar la grandeza que Dios tiene preparada</p>
+            </div>
+          </div>
+        </section>
       </header>
 
       <main class="clip-section">
+        <!-- ===== VIDEO ===== -->
         <div class="clip-container">
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/lrexu9ij51U?si=AQyI4kuMcRoQyV-H"
-            title="YouTube video player"
+            title="Predica: La Iglesia Trascendente"
             frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share;
-            "
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
             class="clip"
           ></iframe>
         </div>
 
-        <section class="up-next">
+        <!-- ===== UP NEXT ===== -->
+        <section class="up-next" aria-label="Otras predicas">
+          <p class="up-next-label">Más predicas</p>
           <div class="predica-container">
             <div class="predica">
               <a href="content_predicas.html" class="special-link">
                 <div class="predica-card">
-                  <div class="predica-text-content">
-                    <div class="predica-title">
-                      <h2>"Viene Algo Grande"</h2>
-                    </div>
-
-                    <br />
-                    <div class="predica-text">
-                      <p>
-                        Aprende a activar las promesas de Dios mediante
-                        decisiones valientes
-                      </p>
-                      <br />
-                      <p>Date: Junio 2, 2026</p>
-                    </div>
+                  <div class="predica-title">
+                    <h2>"Viene Algo Grande"</h2>
+                  </div>
+                  <div class="predica-text">
+                    <p>Aprende a activar las promesas de Dios mediante decisiones valientes</p>
+                    <p>Fecha: Junio 9, 2026</p>
                   </div>
                 </div>
               </a>
@@ -107,19 +88,12 @@
             <div class="predica">
               <a href="content_predicas3.html" class="special-link">
                 <div class="predica-card">
-                  <div class="predica-text-content">
-                    <div class="predica-title">
-                      <h2>"Una Iglesia de Poder"</h2>
-                    </div>
-
-                    <br />
-                    <div class="predica-text">
-                      <p>
-                        manifestación del poder transformador del Espíritu Santo
-                      </p>
-                      <br />
-                      <p>Date: Mayo 20, 2026</p>
-                    </div>
+                  <div class="predica-title">
+                    <h2>"Una Iglesia de Poder"</h2>
+                  </div>
+                  <div class="predica-text">
+                    <p>Manifestación del poder transformador del Espíritu Santo</p>
+                    <p>Fecha: Mayo 20, 2026</p>
                   </div>
                 </div>
               </a>
@@ -134,74 +108,51 @@
             <div class="footer-content">
               <div class="footer-item">
                 <h2>Visítanos</h2>
-                <div>
-                  <p>
-                    Bogotá – Polo: Cra 27 # 83-75 <br />
-                    Bogotá – Ciudad Bolivar: Calle 68 sur # 45D – 13 <br />
-                    Cajicá: Calle 3 # 2-53 Piso 2 <br />
-                  </p>
-                </div>
+                <p>
+                  Bogotá – Polo: Cra 27 # 83-75 <br />
+                  Bogotá – Ciudad Bolivar: Calle 68 sur # 45D – 13 <br />
+                  Cajicá: Calle 3 # 2-53 Piso 2 <br />
+                  Zipaquirá: Cra. 10A #7-49
+                </p>
               </div>
 
               <div class="footer-item">
                 <h2>Accesos rápidos</h2>
-                <div>
-                  <div>
-                    <a href="#" class="special-link">Home</a>
-                  </div>
-
-                  <div>
-                    <a href="#" class="special-link">Sobre Nosotros</a>
-                  </div>
-
-                  <div>
-                    <a href="#" class="special-link">Predicas</a>
-                  </div>
-
-                  <div>
-                    <a href="#" class="special-link">Eventos</a>
-                  </div>
-                </div>
+                <nav aria-label="Accesos rápidos del footer">
+                  <div><a href="../../index.html" class="special-link">Home</a></div>
+                  <div><a href="../sobre_nosotros.html" class="special-link">Sobre Nosotros</a></div>
+                  <div><a href="../predicas.html" class="special-link">Predicas</a></div>
+                  <div><a href="../eventos.html" class="special-link">Eventos</a></div>
+                </nav>
               </div>
 
               <div class="footer-item">
                 <h2>Contacto</h2>
                 <p>Email: sendadevalientes@gmail.com</p>
-                <p>Número:+57 123434325</p>
+                <p>Número: +57 3014242071</p>
               </div>
             </div>
 
             <div class="icons-footer">
               <div>
-                <img
-                  src="../../images/svgs/facebook_footer.svg"
-                  alt=""
-                  class="footer-icon"
-                />
+                <a href="https://www.facebook.com/p/Senda-de-Valientes-100089714483635/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <img src="../../images/svgs/facebook_footer.svg" alt="Facebook" class="footer-icon" />
+                </a>
               </div>
-
               <div>
-                <img
-                  src="../../images/svgs/instagram_footer.svg"
-                  alt=""
-                  class="footer-icon"
-                />
+                <a href="https://www.instagram.com/sendadevalientes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <img src="../../images/svgs/instagram_footer.svg" alt="Instagram" class="footer-icon" />
+                </a>
               </div>
-
               <div>
-                <img
-                  src="../../images/svgs/tiktok_footer.svg"
-                  alt=""
-                  class="footer-icon"
-                />
+                <a href="https://www.tiktok.com/@sendadevalientessdv" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                  <img src="../../images/svgs/tiktok_footer.svg" alt="TikTok" class="footer-icon" />
+                </a>
               </div>
-
               <div>
-                <img
-                  src="../../images/svgs/youtube_footer.svg"
-                  alt=""
-                  class="footer-icon"
-                />
+                <a href="https://www.youtube.com/@sendadevalientes" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                  <img src="../../images/svgs/youtube_footer.svg" alt="YouTube" class="footer-icon" />
+                </a>
               </div>
             </div>
             <hr />
@@ -212,5 +163,15 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      const navToggle = document.getElementById('navToggle');
+      const primaryNav = document.getElementById('primaryNav');
+      navToggle.addEventListener('click', () => {
+        const isOpen = primaryNav.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', isOpen);
+        navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+      });
+    </script>
   </body>
 </html>

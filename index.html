@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ministerio Internacional Senda de Valientes – iglesia comprometida con la enseñanza de la Palabra de Dios y la formación integral de las personas." />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,43 +13,51 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="styles/home.css" />
-    <title>Church</title>
+    <title>Senda de Valientes – Inicio</title>
   </head>
   <body>
     <div class="main-container">
       <header class="hero-section">
+        <!-- ===== NAV ===== -->
         <div class="header">
           <div class="logo-container">
-            <img src="images/sendaLogo.png" class="logo" />
+            <a href="#" aria-label="Ir al inicio">
+              <img src="images/sendaLogo.png" class="logo" alt="Logo Senda de Valientes" />
+            </a>
           </div>
 
-          <nav class="nav-container">
-            <div>
-              <ul>
-                <li>
-                  <a href="#" class="special-link">Home</a>
-                </li>
+          <!-- Hamburger (mobile only) -->
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="primaryNav"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
 
-                <li>
-                  <a href="pages/sobre_nosotros.html" class="special-link"
-                    >Sobre Nosotros</a
-                  >
-                </li>
-
-                <li>
-                  <a href="pages/predicas.html" class="special-link"
-                    >Predicas</a
-                  >
-                </li>
-
-                <li>
-                  <a href="pages/eventos.html" class="special-link">Eventos</a>
-                </li>
-              </ul>
-            </div>
+          <nav class="nav-container" id="primaryNav" aria-label="Navegación principal">
+            <ul>
+              <li>
+                <a href="#" class="special-link" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="pages/sobre_nosotros.html" class="special-link">Sobre Nosotros</a>
+              </li>
+              <li>
+                <a href="pages/predicas.html" class="special-link">Predicas</a>
+              </li>
+              <li>
+                <a href="pages/eventos.html" class="special-link">Eventos</a>
+              </li>
+            </ul>
           </nav>
-        <div/>
+        </div>
 
+        <!-- ===== HERO CAROUSEL ===== -->
         <section class="hero-photo">
           <div
             id="carouselExampleAutoplaying"
@@ -57,13 +66,13 @@
           >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/darkBack.jpg" class="d-block w-100" alt="..." />
+                <img src="images/darkBack.jpg" class="d-block w-100" alt="Imagen principal del ministerio" />
               </div>
               <div class="carousel-item">
-                <img src="images/path2.jpg" class="d-block w-100" alt="..." />
+                <img src="images/path2.jpg" class="d-block w-100" alt="Camino de fe" />
               </div>
               <div class="carousel-item">
-                <img src="images/path3.jpg" class="d-block w-100" alt="..." />
+                <img src="images/path3.jpg" class="d-block w-100" alt="Comunidad Senda de Valientes" />
               </div>
             </div>
             <button
@@ -72,11 +81,8 @@
               data-bs-target="#carouselExampleAutoplaying"
               data-bs-slide="prev"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
             </button>
             <button
               class="carousel-control-next"
@@ -84,32 +90,29 @@
               data-bs-target="#carouselExampleAutoplaying"
               data-bs-slide="next"
             >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
             </button>
           </div>
 
           <div class="hero-text">
             <h1>Avanzando Hacia El <strong>Propósito</strong></h1>
             <div class="hero-buttons">
-              <a href="#" class="btn-hero hero-primary">Conócenos</a>
-              <a href="#" class="btn-hero hero-secondary">Donaciones</a>
+              <a href="pages/sobre_nosotros.html" class="btn-hero hero-primary">Conócenos</a>
+              <a href="#contact-form" class="btn-hero hero-secondary">Donaciones</a>
             </div>
           </div>
-        <section/>
-      </div>
+        </section>
+      </header>
 
       <main>
-
-        <section class="about-us">
+        <!-- ===== QUIÉNES SOMOS ===== -->
+        <section class="about-us" aria-labelledby="about-heading">
           <div class="about-us-container">
             <div>
-              <h1>¿Quiénes Somos?</h1>
+              <h2 id="about-heading">¿Quiénes Somos?</h2>
             </div>
-  
+
             <div class="about-us-content">
               <div class="about-text-wrapper">
                 <p>
@@ -124,175 +127,140 @@
                   formando discípulos que impactan su entorno a través de los
                   principios bíblicos y la voluntad de Dios.
                 </p>
-                <a href="pages/sobre_nosotros.html" class="event-button"
-                  >Más Sobre Nosotros</a
-                >
+
+                <div class="about-button">
+                  <a href="pages/sobre_nosotros.html" class="event-button">Más Sobre Nosotros</a>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="events-section">
+        <!-- ===== EVENTOS ===== -->
+        <section class="events-section" aria-labelledby="events-heading">
           <div>
-            <h1>Nuestros Eventos</h1>
+            <h2 id="events-heading">Nuestros Eventos</h2>
           </div>
-  
+
           <div class="events-container">
+        
             <div class="event-card">
+             
+              <div class="event-image" role="button" tabindex="0" aria-label="Ver imagen Spa en tamaño completo">
+                <img src="images/events/spa.png" alt="Evento Spa – conferencia de descanso en Dios" class="event-pic" data-lightbox="images/events/spa.png" data-lightbox-alt="Evento Spa" />
+              </div>
               <div class="event-info">
                 <div class="card-title">
-                  <h5>Tarde de cine</h5>
+                  <h3>Spa</h3>
                 </div>
-  
-                <div class="event-image">
-                  <img src="images/eventoCine.jpeg" alt="" class="event-pic" />
-                </div>
-  
                 <div class="card-text-wrapper">
-                  <p>
-                    Para Adolecentes, Jóvenes y Jóvenes Adultos Entrada Gratuita
-                  </p>
-  
-                  <p>Fecha: Sábado 6 de Junio</p>
+                  <p>Una conferencia para llevarte a reflexionar si estás descansando en Dios</p>
+                  <p>Fecha: 27 de Junio &nbsp;|&nbsp; Hora: 10:00am</p>
+                  <p>Lugar: Cra 27 #83-75</p>
                 </div>
-  
-                <a href="" class="event-button"> Formulario de inscripción </a>
-  
-                <a href="" class="more-event">Ver Más Información</a>
+                <a href="pages/eventos.html" class="event-button">Formulario de inscripción</a>
+                <a href="pages/eventos.html" class="more-event">Ver Más Información</a>
               </div>
             </div>
-  
+
+            
             <div class="event-card">
+              <div class="event-image" role="button" tabindex="0" aria-label="Ver imagen Valientes Legacy en tamaño completo">
+                <img src="images/events/valientesLegacy.jpeg" alt="Evento Valientes Legacy" class="event-pic" data-lightbox="images/events/valientesLegacy.jpeg" data-lightbox-alt="Valientes Legacy" />
+              </div>
               <div class="event-info">
                 <div class="card-title">
-                  <h5>Conferencia Mentalidad Empresarial</h5>
+                  <h3>Valientes Legacy</h3>
                 </div>
-  
-                <div class="event-image">
-                  <img src="images/evento2.jpeg" alt="" class="event-pic" />
-                </div>
-  
                 <div class="card-text-wrapper">
-                  <p>Conferencia para Empresarios De 3pm - 5pm</p>
-  
-                  <p>Fecha: 23 de Mayo</p>
+                  <p>¡Tu mejor versión no es después, es ahora!</p>
+                  <p>Fecha: 27 de Junio &nbsp;|&nbsp; Hora: 2:30pm</p>
+                  <p>Lugar: Carrera 27 #83-75</p>
                 </div>
-  
-                <a href="" class="event-button"> Formulario de inscripción </a>
-                <a href="" class="more-event">Ver Más Información</a>
+                <a href="pages/eventos.html" class="event-button">Formulario de inscripción</a>
+                <a href="pages/eventos.html" class="more-event">Ver Más Información</a>
               </div>
             </div>
-  
+
+           
             <div class="event-card">
+              <div class="event-image" role="button" tabindex="0" aria-label="Ver imagen Retiro Nuevos Valientes en tamaño completo">
+                <img src="images/events/retiroNuevosValientes.jpeg" alt="Retiro Nuevos Valientes" class="event-pic" data-lightbox="images/events/retiroNuevosValientes.jpeg" data-lightbox-alt="Retiro Nuevos Valientes" />
+              </div>
               <div class="event-info">
                 <div class="card-title">
-                  <h5>Ayuno Congregacional</h5>
+                  <h3>Retiro Nuevos Valientes</h3>
                 </div>
-  
-                <div class="event-image">
-                  <img src="images/evento3.jpeg" alt="" class="event-pic" />
-                </div>
-  
                 <div class="card-text-wrapper">
-                  <p>Sede de Bogotá 9:00am, Te Esperamos</p>
-  
-                  <p>Fecha: 06 de Junio</p>
+                  <p>"De modo que si alguno está en Cristo, nueva criatura es; las cosas viejas pasaron; he aquí todas son hechas nuevas."</p>
+                  <p>Fecha: 04 de Julio</p>
                 </div>
-  
-                <a href="" class="event-button"> Formulario de inscripción </a>
-                <a href="" class="more-event">Ver Más Información</a>
+                <a href="pages/eventos.html" class="event-button">Formulario de inscripción</a>
+                <a href="pages/eventos.html" class="more-event">Ver Más Información</a>
               </div>
             </div>
           </div>
+
+
         </section>
-        <section class="socials-section">
+
+        <!-- ===== REDES SOCIALES ===== -->
+        <section class="socials-section" aria-label="Redes sociales">
           <div class="social-container">
-            <div class="logo-container">
-              <a href="https://www.youtube.com/@sendadevalientes" target="_blank">
-                <img src="images/svgs/youtube.svg" class="logo-social" />
+            <div class="social-icons-row">
+              <a href="https://www.youtube.com/@sendadevalientes" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <img src="images/svgs/youtube.svg" class="logo-social" alt="YouTube" />
               </a>
-  
-              <a
-                href="https://www.instagram.com/sendadevalientes/"
-                target="_blank"
-              >
-                <img src="images/svgs/instagram.svg" class="logo-social" />
+
+              <a href="https://www.instagram.com/sendadevalientes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <img src="images/svgs/instagram.svg" class="logo-social" alt="Instagram" />
               </a>
-  
-              <a
-                href="https://www.facebook.com/p/Senda-de-Valientes-100089714483635/"
-                target="_blank"
-              >
-                <img src="images/svgs/facebook.svg" class="logo-social" />
+
+              <a href="https://www.facebook.com/p/Senda-de-Valientes-100089714483635/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="images/svgs/facebook.svg" class="logo-social" alt="Facebook" />
               </a>
-  
-              <a
-                href="https://www.tiktok.com/@sendadevalientessdv"
-                target="_blank"
-              >
-                <img src="images/svgs/tiktok.svg" class="logo-social" />
+
+              <a href="https://www.tiktok.com/@sendadevalientessdv" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                <img src="images/svgs/tiktok.svg" class="logo-social" alt="TikTok" />
               </a>
             </div>
           </div>
         </section>
 
-        <section class="predicas-section">
-          <h1>Nuestras Predicas</h1>
+        <!-- ===== PREDICAS ===== -->
+        <section class="predicas-section" aria-labelledby="predicas-heading">
+          <h2 id="predicas-heading">Nuestras Predicas</h2>
           <div class="video-container">
             <div>
               <iframe
                 src="https://www.youtube.com/embed/HxkkcbWIoSc?si=vTKIcCaw6Gpnii5k"
-                title="YouTube video player"
+                title="Predica: Viene Algo Grande"
                 frameborder="0"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
                 class="video"
               ></iframe>
             </div>
-  
+
             <div>
               <iframe
                 src="https://www.youtube.com/embed/QdNHDCfDGS0?si=m-abloR7R2ixWC7z"
-                title="YouTube video player"
+                title="Predica: La Iglesia Trascendente"
                 frameborder="0"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
                 class="video"
               ></iframe>
             </div>
-  
+
             <div>
               <iframe
                 src="https://www.youtube.com/embed/4djDB-iUV3Q?si=QD5-qne9eadbqaRX"
-                title="YouTube video player"
+                title="Predica: Una Iglesia de Poder"
                 frameborder="0"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
                 class="video"
@@ -300,196 +268,236 @@
             </div>
           </div>
           <div class="predicas-button-container">
-            <a class="event-button" href="pages/predicas.html"
-              >Explorar más mensajes</a
-              >
-            </div>
-          </section>
-          <section class="form-escuela">
-            <div class="escuela-title">
-              <h2>Inscripción: Escuela De Propósito</h2>
-            </div>
-    
-            <div class="form-container">
-              <form action="" method="post">
-                <div>
-                  <label for="nombreApellido">Nombre Y Apellido:</label>
-                  <input
-                    type="text"
-                    name="nombreYapellido"
-                    id="nombreApellido"
-                    required
-                  />
-                </div>
-    
-                <div>
-                  <label for="celular">Celular:</label>
-                  <input type="tel" name="cell" id="celular" required />
-                </div>
-    
-                <div>
-                  <label for="correo">Correo:</label>
-                  <input type="email" name="mail" id="correo" required />
-                </div>
-                <button type="submit" class="event-button">
-                  Enviar Inscripción
-                </button>
-              </form>
-            </div>
-          </section>
-          <section class="paralax-gathering">
-            <div class="paralax-overlay">
-              <div class="paralax-content">
-                <h1>Junio Mes de un Plan Inimaginable</h1>
-                <div class="paralax-text">
-                  <div class="squedules-container">
-                    <div class="squedule">
-                      <div class="squedule-title">
-                        <h3>Bogotá</h3>
-                      </div>
-    
-                      <div class="squedule-text">
-                        <p>Domingo - 10:00 am / Cr27 #83 - 75 / Barrio El Polo</p>
-                      </div>
-                    </div>
-    
-                    <div class="squedule">
-                      <div class="squedule-title">
-                        <h3>SDV Live</h3>
-                      </div>
-    
-                      <div class="squedule-text">
-                        <p>Domingo - 10:00 am / Youtube</p>
-                      </div>
-                    </div>
-    
-                    <div class="squedule">
-                      <div class="squedule-title">
-                        <h3>Cajicá</h3>
-                      </div>
-    
-                      <div class="squedule-text">
-                        <p>
-                          Domingo - 10:00 am / Calle 68 sur # 45 D-13 / Barrio
-                          Candelaria la Nueva
-                        </p>
-                      </div>
-                    </div>
-    
-                    <div class="squedule">
-                      <div class="squedule-title">
-                        <h3>Zipaquirá</h3>
-                      </div>
-    
-                      <div class="squedule-text">
-                        <p>Domingo - 10:00 am / Cra. 10A #7-49 / Algarra 1</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          
-          <footer>
-            <div class="paralax-gathering">
-              <div class="footer-container">
-                <div class="footer-content">
-                  <div class="footer-item">
-                    <h2>Visítanos</h2>
-                    <div>
-                      <p>
-                        Bogotá – Polo: Cra 27 # 83-75 <br />
-                        Bogotá – Ciudad Bolivar: Calle 68 sur # 45D – 13 <br />
-                        Cajicá: Calle 3 # 2-53 Piso 2 <br />
-                      </p>
-                    </div>
-                  </div>
-    
-                  <div class="footer-item">
-                    <h2>Accesos rápidos</h2>
-                    <div>
-                      <div>
-                        <a href="#" class="special-link">Home</a>
-                      </div>
-    
-                      <div>
-                        <a href="#" class="special-link">Sobre Nosotros</a>
-                      </div>
-    
-                      <div>
-                        <a href="#" class="special-link">Predicas</a>
-                      </div>
-    
-                      <div>
-                        <a href="#" class="special-link">Eventos</a>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <div class="footer-item">
-                    <h2>Contacto</h2>
-                    <p>Email: sendadevalientes@gmail.com</p>
-                    <p>Número:+57 123434325</p>
-                  </div>
-                </div>
-    
-                <div class="icons-footer">
-                  <div>
-                    <a href="">
-                      <img
-                        src="../images/svgs/facebook_footer.svg"
-                        alt=""
-                        class="footer-icon"
-                      />
-                    </a>
-                  </div>
-    
-                  <div>
-                    <a href="">
-                      <img
-                        src="../images/svgs/instagram_footer.svg"
-                        alt=""
-                        class="footer-icon"
-                      />
-                    </a>
-                  </div>
-    
-                  <div>
-                    <a href="">
-                      <img
-                        src="../images/svgs/tiktok_footer.svg"
-                        alt=""
-                        class="footer-icon"
-                      />
-                    </a>
+            <a class="event-button" href="pages/predicas.html">Explorar más mensajes</a>
+          </div>
+        </section>
 
+        <!-- ===== FORMULARIO DE CONTACTO ===== -->
+        <section class="form-escuela" id="contact-form" aria-labelledby="form-heading">
+          <div class="escuela-title">
+            <h2 id="form-heading">¡Ponte en Contacto Con Nosotros!</h2>
+          </div>
+
+          <div class="form-container">
+            <form action="" method="post" novalidate>
+              <div>
+                <label for="nombreApellido">Nombre y Apellido:</label>
+                <input
+                  type="text"
+                  name="nombreYapellido"
+                  id="nombreApellido"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="celular">Celular:</label>
+                <input type="tel" name="cell" id="celular" autocomplete="tel" required />
+              </div>
+
+              <div>
+                <label for="correo">Correo:</label>
+                <input type="email" name="mail" id="correo" autocomplete="email" required />
+              </div>
+              <button type="submit" class="event-button">Enviar Inscripción</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- ===== HORARIOS (PARALLAX) ===== -->
+        <section class="paralax-gathering" aria-labelledby="schedule-heading">
+          <div class="paralax-overlay">
+            <div class="paralax-content">
+              <h2 id="schedule-heading">Junio – Mes de un Plan Inimaginable</h2>
+              <div class="paralax-text">
+                <div class="squedules-container">
+                  <div class="squedule">
+                    <div class="squedule-title">
+                      <h3>Bogotá</h3>
+                    </div>
+                    <div class="squedule-text">
+                      <p>Domingo - 10:00 am / Cr27 #83 - 75 / Barrio El Polo</p>
+                    </div>
                   </div>
-    
-                  <div>
-                    <a href="">
-                      <img
-                        src="../images/svgs/youtube_footer.svg"
-                        alt=""
-                        class="footer-icon"
-                      />
-                    </a>
+
+                  <div class="squedule">
+                    <div class="squedule-title">
+                      <h3>SDV Live</h3>
+                    </div>
+                    <div class="squedule-text">
+                      <p>Domingo - 10:00 am / Youtube</p>
+                    </div>
                   </div>
-                </div>
-                <hr />
-                <div>
-                  <p>© 2026 Senda de Valientes. Todos los derechos reservados</p>
+
+                  <div class="squedule">
+                    <div class="squedule-title">
+                      <h3>Cajicá</h3>
+                    </div>
+                    <div class="squedule-text">
+                      <p>Domingo - 10:00 am / Calle 68 sur # 45 D-13 / Barrio Candelaria la Nueva</p>
+                    </div>
+                  </div>
+
+                  <div class="squedule">
+                    <div class="squedule-title">
+                      <h3>Zipaquirá</h3>
+                    </div>
+                    <div class="squedule-text">
+                      <p>Domingo - 10:00 am / Cra. 10A #7-49 / Algarra 1</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </footer>
+          </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer>
+          <div class="paralax-gathering">
+            <div class="footer-container">
+              <div class="footer-content">
+                <div class="footer-item">
+                  <h2>Visítanos</h2>
+                  <div>
+                    <p>
+                      Bogotá – Polo: Cra 27 # 83-75 <br />
+                      Bogotá – Ciudad Bolivar: Calle 68 sur # 45D – 13 <br />
+                      Cajicá: Calle 3 # 2-53 Piso 2 <br />
+                      Zipaquirá: Cra. 10A #7-49
+                    </p>
+                  </div>
+                </div>
+
+                <div class="footer-item">
+                  <h2>Accesos rápidos</h2>
+                  <nav aria-label="Accesos rápidos del footer">
+                    <div>
+                      <a href="#" class="special-link">Home</a>
+                    </div>
+                    <div>
+                      <a href="pages/sobre_nosotros.html" class="special-link">Sobre Nosotros</a>
+                    </div>
+                    <div>
+                      <a href="pages/predicas.html" class="special-link">Predicas</a>
+                    </div>
+                    <div>
+                      <a href="pages/eventos.html" class="special-link">Eventos</a>
+                    </div>
+                  </nav>
+                </div>
+
+                <div class="footer-item">
+                  <h2>Contacto</h2>
+                  <p>Email: sendadevalientes@gmail.com</p>
+                  <p>Número: +57 3014242071</p>
+                </div>
+              </div>
+
+              <div class="icons-footer">
+                <div>
+                  <a href="https://www.facebook.com/p/Senda-de-Valientes-100089714483635/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <img src="images/svgs/facebook_footer.svg" alt="Facebook" class="footer-icon" />
+                  </a>
+                </div>
+
+                <div>
+                  <a href="https://www.instagram.com/sendadevalientes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="images/svgs/instagram_footer.svg" alt="Instagram" class="footer-icon" />
+                  </a>
+                </div>
+
+                <div>
+                  <a href="https://www.tiktok.com/@sendadevalientessdv" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <img src="images/svgs/tiktok_footer.svg" alt="TikTok" class="footer-icon" />
+                  </a>
+                </div>
+
+                <div>
+                  <a href="https://www.youtube.com/@sendadevalientes" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <img src="images/svgs/youtube_footer.svg" alt="YouTube" class="footer-icon" />
+                  </a>
+                </div>
+              </div>
+              <hr />
+              <div>
+                <p>© 2026 Senda de Valientes. Todos los derechos reservados</p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </main>
-
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <!-- ===== LIGHTBOX MODAL ===== -->
+    <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista previa de imagen">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar vista previa">&times;</button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+    </div>
+
+    <script>
+    
+      const navToggle = document.getElementById('navToggle');
+      const primaryNav = document.getElementById('primaryNav');
+      navToggle.addEventListener('click', () => {
+        const isOpen = primaryNav.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', isOpen);
+        navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+      });
+
+   
+      const lightbox    = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lbClose     = document.getElementById('lightboxClose');
+
+      function openLightbox(src, alt) {
+        lightboxImg.src = src;
+        lightboxImg.alt = alt || '';
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    
+        setTimeout(() => { lightboxImg.src = ''; }, 250);
+      }
+
+      
+      document.querySelectorAll('[data-lightbox]').forEach(img => {
+        img.addEventListener('click', (e) => {
+          e.stopPropagation();
+          openLightbox(img.dataset.lightbox, img.dataset.lightboxAlt);
+        });
+      });
+
+ 
+      document.querySelectorAll('.event-image[role="button"]').forEach(wrap => {
+        wrap.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            const img = wrap.querySelector('[data-lightbox]');
+            if (img) openLightbox(img.dataset.lightbox, img.dataset.lightboxAlt);
+          }
+        });
+      });
+
+
+      lbClose.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+      });
+    </script>
   </body>
 </html>

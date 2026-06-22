@@ -1,12 +1,11 @@
 /* =============================================
-   PREDICAS / EVENTOS PAGE
+   PREDICAS PAGE
    (global.css handles reset, root tokens, base)
    ============================================= */
 
 h1 { font-size: var(--step-3); }
 h2 { font-size: var(--step-2); }
 
-/* Override body padding from global */
 body {
   padding-bottom: 0;
 }
@@ -48,15 +47,11 @@ body {
   flex-wrap: wrap;
 }
 
+/* Original thumbnail – natural size, no forced crop */
 .predica-thumbnail {
   border-radius: 8px;
-  width: 180px;
-  height: 160px;           /* fixed height so large images don't distort the row */
-  max-width: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  flex-shrink: 0;          /* don't squish the image on small flex containers */
+  min-width: 10vw;
+  max-height: 23vh;
 }
 
 .predica-title {
