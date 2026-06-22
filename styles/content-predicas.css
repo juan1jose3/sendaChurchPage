@@ -34,7 +34,7 @@ body {
    ============================================= */
 .clip-section {
   display: flex;
-  flex-wrap: wrap;           /* wraps to column on small screens */
+  flex-wrap: wrap;          
   align-items: flex-start;
   justify-content: center;
   gap: 2.5rem;
@@ -43,13 +43,13 @@ body {
   margin: 0 auto;
 }
 
-/* ── Video wrapper – fluid 16/9 ratio ── */
+
 .clip-container {
-  flex: 1 1 480px;           /* grows, shrinks, min 480px before wrapping */
+  flex: 1 1 480px;          
   max-width: 760px;
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;     /* keeps ratio at any size */
+  aspect-ratio: 16 / 9;  
 }
 
 .clip {
@@ -63,7 +63,7 @@ body {
 
 /* ── Up-next sidebar ── */
 .up-next {
-  flex: 0 1 280px;           /* fixed sidebar width, shrinks when needed */
+  flex: 0 1 280px;           
   min-width: 220px;
 }
 
@@ -109,7 +109,7 @@ body {
    RESPONSIVE
    ============================================= */
 
-/* On narrow screens both blocks stack vertically */
+
 @media (max-width: 700px) {
   .clip-section {
     flex-direction: column;

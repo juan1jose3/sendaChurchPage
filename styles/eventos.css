@@ -43,7 +43,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* Large event images – fixed height so they crop consistently */
+
 .predica-thumbnail {
   border-radius: 8px;
   width: 200px;
@@ -72,7 +72,7 @@ body {
   font-size: var(--step-0);
 }
 
-/* -- Responsive: stack card on small screens -- */
+
 @media (max-width: 480px) {
   .predica-card {
     flex-direction: column;

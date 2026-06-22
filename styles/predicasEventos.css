@@ -51,12 +51,12 @@ body {
 .predica-thumbnail {
   border-radius: 8px;
   width: 180px;
-  height: 160px;           /* fixed height so large images don't distort the row */
+  height: 160px;           
   max-width: 100%;
   object-fit: cover;
   object-position: center top;
   display: block;
-  flex-shrink: 0;          /* don't squish the image on small flex containers */
+  flex-shrink: 0;          
 }
 
 .predica-title {
@@ -70,7 +70,7 @@ body {
   font-size: var(--step-0);
 }
 
-/* -- Responsive: stack card on small screens -- */
+
 @media (max-width: 480px) {
   .predica-card {
     flex-direction: column;

@@ -47,7 +47,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* Original thumbnail – natural size, no forced crop */
+
 .predica-thumbnail {
   border-radius: 8px;
   min-width: 10vw;
@@ -65,7 +65,7 @@ body {
   font-size: var(--step-0);
 }
 
-/* -- Responsive: stack card on small screens -- */
+
 @media (max-width: 480px) {
   .predica-card {
     flex-direction: column;
